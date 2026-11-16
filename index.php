@@ -13,7 +13,7 @@
  // 1 = all logs
  define ("DEBUGLVL", 0);
 
- define('ACCESS_TOKEN', "112493740:AAHHFH1HHM95-HgSbVoibojcA6L3AsbhfaI");
+ define('ACCESS_TOKEN', getenv('TELEGRAM_BOT_TOKEN'));
 
 function build_response($chat_id, $text) {
     $returnvalue = 'https://api.telegram.org/bot'. ACCESS_TOKEN. '/sendMessage?chat_id='
